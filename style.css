@@ -175,7 +175,7 @@ header h2 {
 }
 
 .quienes-somos p {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto 16px;
   font-size: 16px;
   color: #ffffff;
@@ -270,14 +270,10 @@ header h2 {
 /* ── SERVICIOS ── */
 .services {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
-}
-
-@media (max-width: 900px) {
-  .services {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
@@ -497,6 +493,37 @@ footer {
   color: #e30a17;
 }
 
+.footer-creator {
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-creator p {
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-creator a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.footer-creator a:hover {
+  color: #e30a17;
+}
+
+.footer-creator img {
+  height: 28px;
+  width: auto;
+  opacity: 0.4;
+}
+
 .footer-copy {
   text-align: center;
   color: #666;
@@ -507,6 +534,11 @@ footer {
   .footer-contacto {
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    gap: 12px;
   }
 }
 .mapa {
